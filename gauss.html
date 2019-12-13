@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gauss-Seidel Method</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+
+        <header class="main-header">
+            <div class="container">
+                <h1 class="name"><a href="#">Computational Method</a></h1>
+                <ul class="main-nav">
+                    <li><a href="bisection.html">Bisection</a></li>
+                    <li><a href="newton.html">Newton Raphson</a></li>
+                    <li><a href="gauss.html">Gauss Sedial</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="container">
+
+            <div class="primary col">
+                <h2>Gauss-Sedial Method</h2>
+                <input type="text" id="y1" placeholder="value of x for equation 1" name="y" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                <input type="text" id="y2" placeholder="value of y for equation 2" name="a" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                <input type="text" id="y3" placeholder="value of z for equation 3" name="err" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                <input type="text" id="err" placeholder="round to significant digits" name="err" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                <button class="btn btn-primary" id="btn" style="margin-top:10px" name="btn">Calculate</button>
+
+
+            </div>
+
+            <div class="primary col" id="ans-panel" style="padding:20px">
+
+            </div>
+
+        </div>
+
+        <div class="container" style="margin-top:10px">
+            <div class="primary col" id="process-panel">
+            </div>
+        </div>
+        <!--/.container-->
+
+    </div>
+    <!--/.wrap-->
+
+    <footer class="main-footer">
+        <span>&copy;2018 all rights reserved</span>
+    </footer>
+
+    <script src="func/nerdamer.core.js"></script>
+    <script src="func/Algebra.js"></script>
+    <script src="func/Calculus.js"></script>
+    <script src="func/Solve.js"></script>
+    <script src="func/gauss.js"></script>
+
+</body>
+
+</html>
